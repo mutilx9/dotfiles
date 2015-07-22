@@ -1,0 +1,29 @@
+[user]
+	name = mutilx9
+	email = mutilx9@gmail.com
+
+[alias]
+	go = checkout
+	ci = commit
+	st = status -s
+	br = branch
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	type = cat-file -t
+	dump = cat-file -p
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+[color]
+	ui = auto
+
+[merge]
+	ff = false
+	log = true
+
+[pull]
+	ff = only
+
+[push]
+	default = current

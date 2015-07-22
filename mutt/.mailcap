@@ -1,0 +1,3 @@
+text/html;      lynx -display_charset %{charset} -dump %s; copiousoutput; nametemplate=%s.html
+application/x-gunzip;   gzcat; copiousoutput
+application/x-tar-gz; gunzip -c %s | tar -tf - ; copiousoutput

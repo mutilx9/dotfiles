@@ -1,0 +1,31 @@
+set spoolfile = "/var/spool/mail/$LOGNAME"
+set mbox_type = Maildir
+set sort = threads
+set sort_aux = date
+set index_format = "%4C %Z %{%b %d %R} %-15.15L %s"
+set header_cache = ~/.cache/mutt
+set edit_headers
+set hidden_host = yes
+auto_view text/html
+alternative_order text/plain text/html
+source ~/.mutt/mailboxes
+
+macro index,pager I '<shell-escape> fetchmail<enter>'
+
+color index yellow default ~N
+color index yellow default ~O
+
+# Sidebar
+set sidebar_width = 20
+set sidebar_visible = yes
+set sidebar_delim = '|'
+set sidebar_sort = yes
+color sidebar_new yellow default
+
+macro index,pager S ':toggle sidebar_visible<enter>^L'
+bind index,pager < sidebar-prev
+bind index,pager > sidebar-next
+bind index,pager <Return> sidebar-open
+
+source ~/.mutt/crypto
+source ~/.mutt/accounts/init

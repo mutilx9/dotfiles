@@ -1,0 +1,39 @@
+# General
+
+title="${filename}"
+stop-screensaver="yes"
+screenshot-format="jpg"
+screenshot-template='%f_snapshot_%wm.%wS_[%tY.%tm.%td_%tH.%tM.%tS]'
+
+# Video
+
+vo=opengl-hq,opengl,xv
+framedrop=vo
+vd-lavc-threads=6
+demuxer-mkv-subtitle-preroll
+
+# Audio
+
+ao=pulse,alsa
+af=scaletempo
+
+# Subtitles
+
+embeddedfonts=yes
+ass-force-style=Kerning=yes
+osd-font="Open Sans"
+sub-text-font="Open Sans Bold"
+sub-text-font-size=60
+
+# Languages
+
+alang=jpn,jap,es,spa,en,eng
+slang=en,eng,es,spa
+
+# OSD/C
+
+osd-bar-align-y=0
+osd-bar-h=2
+osd-border-size=3
+osd-color="#99FFFFFF"
+osc=yes
