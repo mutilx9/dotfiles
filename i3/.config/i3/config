@@ -124,7 +124,7 @@ bar {
 	output HDMI-0
 	status_command i3status --config ~/.config/i3/i3status.conf
 	position top
-	font pango:Input Mono 10.5
+	font pango:Droid Sans Mono 11
 }
 
 # Second monitor
@@ -132,7 +132,7 @@ bar {
 	output DVI-0
 	status_command i3status --config ~/.config/i3/i3status2.conf
 	position top
-	font pango:Input Mono 10.5
+	font pango:Droid Sans Mono 11
 }
 
 # Screeshots
