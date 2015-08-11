@@ -1,6 +1,4 @@
-pu escape-key       Escape (Meta)
+pu escape-key       ^I
+pu backspace        DEL
 pu port             /dev/ttyUSB0
 pu baudrate         19200
-pu bits             8
-pu parity           N
-pu stopbits         1
