@@ -52,6 +52,8 @@ Plug 'klen/python-mode', { 'for': 'python' }
 	let g:pymode_rope = 0
 	let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+	let g:jedi#use_splits_not_buffers = "left"
+	let g:jedi#show_call_signatures = "2"
 Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
 Plug 'vim-scripts/SQLComplete.vim', { 'for': 'sql' }
 " }}}
@@ -95,6 +97,8 @@ set autoindent		" Copy indent at <BR>
 set scrolloff=10	" Number of lines to keep above and below the cursor
 set incsearch		" Jump to search while writing
 set laststatus=2	" Always show the status line
+set shortmess=atI	" Shorter info tokens
+set noshowmode		" Clean the command line
 
 " Chars
 set listchars=tab:▸\ 
@@ -178,6 +182,7 @@ autocmd Filetype python setlocal textwidth=79 colorcolumn=79
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 autocmd Filetype python setlocal expandtab softtabstop=4 shiftround autoindent
 autocmd Filetype python setlocal foldmethod=indent
+autocmd Filetype python setlocal omnifunc=jedi#completions
 
 " }}}
 
