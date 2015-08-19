@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 " Interface {{{
 Plug 'bling/vim-airline'
 	let g:airline_powerline_fonts = 1
-	let g:airline#extensions#tagbar#flags = 's'
+	let g:airline#extensions#tagbar#enabled = 0
 Plug 'edkolev/tmuxline.vim'
 Plug 'ntpeters/vim-airline-colornum'
 Plug 'tomasr/molokai'
@@ -14,8 +14,9 @@ Plug 'tomasr/molokai'
 " }}}
 
 " Browsing {{{
-Plug 'kien/ctrlp.vim'
-	nmap <F4> :CtrlPBufTagAll<cr>
+Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
+	let g:ctrlp_show_hidden = 0
+	nmap <C-p> :CtrlP<cr>
 Plug 'rking/ag.vim', { 'on': 'Ag' }
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 	let g:undotree_WindowLayout = 2
@@ -43,7 +44,8 @@ Plug 'elentok/todo.vim', { 'for': 'todo' }
 " Programming {{{
 Plug 'scrooloose/syntastic'
 	let g:syntastic_php_checkers = ['php', 'phpmd']
-Plug 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+	let g:tagbar_autofocus = 1
 	nmap <C-t> :TagbarToggle<cr>
 Plug 'klen/python-mode', { 'for': 'python' }
 	let g:pymode = 1
