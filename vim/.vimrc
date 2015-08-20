@@ -30,6 +30,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 " Edit {{{
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'terryma/vim-multiple-cursors'
 " }}}
 
 " Syntax {{{
@@ -39,6 +40,7 @@ Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'PotatoesMaster/i3-vim-syntax', { 'for': 'i3' }
 Plug 'elentok/todo.vim', { 'for': 'todo' }
+Plug 'lotheac/pf.vim', { 'for': 'pf' }
 " }}}
 
 " Programming {{{
