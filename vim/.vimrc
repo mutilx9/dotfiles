@@ -43,7 +43,12 @@ Plug 'elentok/todo.vim', { 'for': 'todo' }
 
 " Programming {{{
 Plug 'scrooloose/syntastic'
+	let g:syntastic_check_on_wq = 0
 	let g:syntastic_php_checkers = ['php', 'phpmd']
+Plug 'SirVer/ultisnips'
+	let g:UltiSnipsJumpForwardTrigger="<c-f>"
+	let g:UltiSnipsJumpBackwardTrigger="<c-b>"
+Plug 'honza/vim-snippets'
 Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 	let g:tagbar_autofocus = 1
 	nmap <C-t> :TagbarToggle<cr>
