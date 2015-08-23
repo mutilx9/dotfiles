@@ -52,6 +52,7 @@ source $ZSH/oh-my-zsh.sh
 # User env
 export EDITOR=vim
 export RANGER_LOAD_DEFAULT_RC=FALSE
+alias git='TZ=UTC git'
 
 # Manually setting the language environment
 export LANG=en_US.UTF-8
