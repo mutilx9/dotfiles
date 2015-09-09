@@ -125,7 +125,7 @@ set undoreload=10000
 
 " Mappings {{{
 
-let g:mapleader = ','
+let g:mapleader = "\<Space>"
 " Saving {{{
 " Fast saving
 nmap <leader>w :w!<cr>
