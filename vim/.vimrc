@@ -34,7 +34,9 @@ Plug 'terryma/vim-multiple-cursors'
 " }}}
 
 " Syntax {{{
-Plug 'aserebryakov/filestyle'
+if &t_Co == '256'
+	Plug 'aserebryakov/filestyle'
+endif
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'othree/html5.vim', { 'for': 'html' }
