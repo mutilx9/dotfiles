@@ -1,4 +1,6 @@
 setopt HIST_IGNORE_SPACE
+setopt HIST_IGNORE_ALL_DUPS
+zstyle ':completion:*' rehash true
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Path to your oh-my-zsh installation.
@@ -51,6 +53,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User env
 export EDITOR=vim
+export BROWSER=qutebrowser
 export RANGER_LOAD_DEFAULT_RC=FALSE
 alias git='TZ=UTC git'
 
