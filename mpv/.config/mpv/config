@@ -28,7 +28,7 @@ sub-text-font-size=60
 
 # Languages
 
-alang=jpn,jap,es,spa,en,eng
+alang=jpn,jap,en,eng,es,spa
 slang=en,eng,es,spa
 
 # OSD/C
