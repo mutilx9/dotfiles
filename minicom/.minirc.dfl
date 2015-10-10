@@ -1,4 +1,4 @@
-pu escape-key       ^I
+pu escape-key       ESC
 pu backspace        DEL
 pu port             /dev/ttyUSB0
 pu baudrate         19200
