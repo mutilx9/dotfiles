@@ -24,7 +24,7 @@
 /usr/bin/setxkbmap -option ctrl:nocaps &
 
 # Start PulseAudio
-/usr/bin/pulseaudio --start &
+/usr/bin/start-pulseaudio-x11 &
 
 # Polkit daemon
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
