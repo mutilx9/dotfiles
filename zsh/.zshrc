@@ -8,9 +8,7 @@ ZSH=/usr/share/oh-my-zsh/
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-#ZSH_THEME="dracula"
-ZSH_THEME="bullet-train"
-BULLETTRAIN_STATUS_EXIT_SHOW=true
+ZSH_THEME="kardan"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
