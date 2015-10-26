@@ -57,6 +57,7 @@ bindkey OB history-beginning-search-forward
 export EDITOR=vim
 export BROWSER=qutebrowser
 export RANGER_LOAD_DEFAULT_RC=FALSE
+export GPG_TTY=$(tty)
 alias git='TZ=UTC git'
 
 # Manually setting the language environment
