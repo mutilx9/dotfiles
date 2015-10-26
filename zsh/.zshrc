@@ -49,6 +49,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# Bindings
+bindkey OA history-beginning-search-backward
+bindkey OB history-beginning-search-forward
+
 # User env
 export EDITOR=vim
 export BROWSER=qutebrowser
