@@ -24,7 +24,7 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 	map <C-z> :UndotreeToggle<cr>
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	let g:NERDTreeIgnore=['\.pyc$', '\.orig$']
-	map <C-d> :NERDTreeToggle<cr>
+	map <C-q> :NERDTreeToggle<cr>
 " }}}
 
 " Edit {{{
@@ -81,13 +81,9 @@ Plug 'darvelo/vim-systemd', { 'for': 'systemd' }
 call plug#end()
 " }}}
 
-" Basic configuration {{{
+" Vanilla configuration {{{
 
-" Encoding
-set encoding=utf-8	" Charset utf-8
-scriptencoding utf-8
-
-" Basic
+" Basic {{{
 set backspace=indent,eol,start
 set ffs=unix,dos,mac	" Use Unix as the standard file type
 syntax on			" Syntax
@@ -107,25 +103,37 @@ set scrolloff=10	" Number of lines to keep above and below the cursor
 set incsearch		" Jump to search while writing
 set laststatus=2	" Always show the status line
 set shortmess=atI	" Shorter info tokens
-set noshowmode		" Clean the command line
+set cpoptions+=$	" Change like vi
+set wildmenu		" Better command-line completion
+" }}}
 
-" Chars
+" Encoding {{{
+set encoding=utf-8	" Charset utf-8
+scriptencoding utf-8
+" }}}
+
+" Chars {{{
 set listchars=tab:▸\ 
 set listchars+=eol:$
 set listchars+=trail:+
 set listchars+=space:␣
+" }}}
 
-" persistent undo
+" Persistent undo {{{
 set undofile
 set undodir=$HOME/.vim/undo
 set undolevels=1000
 set undoreload=10000
+" }}}
 
 " }}}
 
 " Mappings {{{
 
 let g:mapleader = "\<Space>"
+" Movement {{{
+nmap <Tab> ''
+" }}}
 " Saving {{{
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -172,7 +180,7 @@ imap <End>	<nop>
 
 " Colorscheme {{{
 
-color molokai
+colorscheme molokai
 
 " }}}
 
