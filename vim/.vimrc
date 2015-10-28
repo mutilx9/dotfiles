@@ -40,6 +40,7 @@ endif
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'othree/html5.vim', { 'for': 'html' }
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
 Plug 'PotatoesMaster/i3-vim-syntax', { 'for': 'i3' }
 Plug 'elentok/todo.vim', { 'for': 'todo' }
 Plug 'lotheac/pf.vim', { 'for': 'pf' }
@@ -190,8 +191,8 @@ filetype plugin on
 
 " Disable filestyle at tagbar without breaking everything
 autocmd Filetype tagbar setlocal expandtab
-" Web and notes
-autocmd Filetype html,css,rst setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" Web
+autocmd Filetype html,jinja,css setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype markdown,*.rst setlocal spell
 
 " PEP8 Python
