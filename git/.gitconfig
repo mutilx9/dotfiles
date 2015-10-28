@@ -21,6 +21,7 @@
 [merge]
 	ff = false
 	log = true
+	tool = vimdiff
 
 [pull]
 	ff = only
