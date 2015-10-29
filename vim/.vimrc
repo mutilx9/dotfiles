@@ -4,11 +4,6 @@
 call plug#begin('~/.vim/plugged')
 
 " Interface {{{
-Plug 'bling/vim-airline'
-	let g:airline_powerline_fonts = 1
-	let g:airline#extensions#tagbar#enabled = 0
-Plug 'edkolev/tmuxline.vim'
-Plug 'ntpeters/vim-airline-colornum'
 Plug 'tomasr/molokai'
 	let g:molokai_original = 0
 " }}}
@@ -106,6 +101,17 @@ set laststatus=2	" Always show the status line
 set shortmess=atI	" Shorter info tokens
 set cpoptions+=$	" Change like vi
 set wildmenu		" Better command-line completion
+" }}}
+
+" Status line {{{
+set statusline=
+set statusline+=%1*%3v
+set statusline+=%0*\ %f%m\ %w
+set statusline+=\ \ %=
+set statusline+=\ \ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}
+set statusline+=\ \ %{&fenc}
+set statusline+=\ %{GitHead()}
+set statusline+=\ %{GitHunks()}
 " }}}
 
 " Encoding {{{
@@ -206,23 +212,34 @@ autocmd Filetype python setlocal omnifunc=jedi#completions
 
 " Funcs {{{
 
+function! GitHead()
+	if exists(":Gstatus")
+		return fugitive#head()
+	else
+		return ''
+	endif
+endfunction
+
+function! GitHunks()
+	let hunk_symbols = ['+', '~', '-']
+	let string = ''
+	if exists(":GitGutter")
+		let hunks = gitgutter#hunk#summary()
+	else
+		return string
+	endif
+	for i in [0, 1, 2]
+		if hunks[i] > 0
+			let string .= printf('%s%s', hunk_symbols[i], hunks[i])
+		endif
+	endfor
+	return string
+endfunction
+
 " Save cursor position
 augroup resCur
 	autocmd!
 	autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END
-
-" }}}
-"
-" Fallback {{{
-
-" Standard status line
-set statusline=
-set statusline+=\ %f%m\ %w\ 
-set statusline+=\ %=
-set statusline+=%3*\ %04l\ /\ %03v\ 
-set statusline+=%4*\ %{&fenc!=''?&fenc:&enc}\ 
-set statusline+=%3*\ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}\ 
-set statusline+=%=%5*\ %P\ 
 
 " }}}
