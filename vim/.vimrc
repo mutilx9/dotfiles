@@ -4,6 +4,9 @@
 call plug#begin('~/.vim/plugged')
 
 " Interface {{{
+Plug 'dmedvinsky/uritality.vim'
+	let g:uritality_color_insert = "#66d9ef"
+	let g:uritality_color_normal = "white"
 Plug 'tomasr/molokai'
 	let g:molokai_original = 0
 " }}}
