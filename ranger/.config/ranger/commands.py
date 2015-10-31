@@ -1543,19 +1543,3 @@ class extracthere(Command):
 
         obj.signal_bind('after', refresh)
         self.fm.loader.add(obj)
-
-
-class init_tabs(Command):
-    """
-    :init_tabs
-
-    Initialize ranger with the most used tabs, previously bookmarked
-    """
-    def execute(self):
-        # Downloads, Watch, Pictures, T2F.
-        bookmarks = ('d', 'w', 'p', 'f', )
-
-        for bookmark in bookmarks:
-            self.fm.enter_bookmark(bookmark)
-            self.fm.tab_new()
-        self.fm.tab_close()
