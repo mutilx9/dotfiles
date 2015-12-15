@@ -5,7 +5,7 @@ XTerm*Foreground: green
 
 URxvt*depth: 16
 URxvt*cursorColor: #d0d0d0
-URxvt*font: xft:Droid Sans Mono for Powerline:size=12
+URxvt*font: xft:Liberation Mono:size=12
 URxvt.scrollBar: true
 URxvt.scrollstyle: plain
 URxvt*scrollTtyOutput: false
