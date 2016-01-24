@@ -5,23 +5,23 @@
 # Executed by startx (run your window manager from here)
 
 # Set the cursor
-/usr/bin/xsetroot -cursor_name left_ptr &
+xsetroot -cursor_name left_ptr &
 
 # Xresources
-/usr/bin/xrdb -merge ~/.Xresources &
+xrdb -merge ~/.Xresources &
 
 # Disable DPMS and prevent screen from blanking
-/usr/bin/xset -dpms &
-/usr/bin/xset s off &
+xset -dpms &
+xset s off &
 
 # Disable bell
-/usr/bin/xset b off &
+xset b off &
 
 # Change caps lock to ctrl
 /usr/bin/setxkbmap -option ctrl:nocaps &
 
 # URxvt daemon
-/usr/bin/urxvtd -q -f &
+urxvtd -q -f &
 
 # Wallpaper
 feh --bg-scale ~/wallpaper.png ~/white.png --no-fehbg &
