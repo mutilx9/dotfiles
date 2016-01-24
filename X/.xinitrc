@@ -17,8 +17,8 @@ xset s off &
 # Disable bell
 xset b off &
 
-# Change caps lock to ctrl
-/usr/bin/setxkbmap -option ctrl:nocaps &
+# Set layout to us,es, alt-shift to swap between and caps lock to ctrl
+setxkbmap -model pc104 -layout us,es -variant altgr-intl, -option grp:alt_shift_toggle -option ctrl:nocaps
 
 # URxvt daemon
 urxvtd -q -f &
