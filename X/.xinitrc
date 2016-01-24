@@ -7,9 +7,6 @@
 # Set the cursor
 /usr/bin/xsetroot -cursor_name left_ptr &
 
-# Ensure num lock on
-/usr/bin/numlockx &
-
 # Xresources
 /usr/bin/xrdb -merge ~/.Xresources &
 
@@ -22,12 +19,6 @@
 
 # Change caps lock to ctrl
 /usr/bin/setxkbmap -option ctrl:nocaps &
-
-# Start PulseAudio
-/usr/bin/start-pulseaudio-x11 &
-
-# Polkit daemon
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 
 # URxvt daemon
 /usr/bin/urxvtd -q -f &
