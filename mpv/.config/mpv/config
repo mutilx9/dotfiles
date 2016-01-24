@@ -2,7 +2,6 @@
 
 title="${filename}"
 volume=-1
-stop-screensaver="yes"
 screenshot-format="jpg"
 screenshot-template='%f_snapshot_%wM.%wS_[%tY.%tm.%td_%tH.%tM.%tS]'
 
@@ -15,7 +14,6 @@ demuxer-mkv-subtitle-preroll
 
 # Audio
 
-ao=pulse,alsa
 af=scaletempo
 
 # Subtitles
