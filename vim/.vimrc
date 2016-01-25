@@ -70,6 +70,7 @@ Plug 'vim-scripts/SQLComplete.vim', { 'for': 'sql' }
 
 " Git {{{
 Plug 'tpope/vim-fugitive'
+	autocmd	BufReadPost fugitive://* set bufhidden=delete
 Plug 'airblade/vim-gitgutter'
 Plug 'rhysd/committia.vim'
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
