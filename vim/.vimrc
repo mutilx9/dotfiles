@@ -85,9 +85,12 @@ call plug#end()
 set backspace=indent,eol,start
 set ffs=unix,dos,mac	" Use Unix as the standard file type
 syntax on			" Syntax
+set encoding=utf-8	" Charset for new files
+set fileencoding=utf-8	" Charset for saved files
 set noswapfile		" .swap
 set number			" Lines with absolute numbers
 set relativenumber	" Lines with relative numbers
+set cursorline		" Highlights current line
 set title			" Terminal title
 set autoread		" Rereads the file when changed from the outside
 set magic			" Regular expressions
@@ -97,12 +100,24 @@ set softtabstop=4	" Default: TAB = 4 spaces visually
 set shiftwidth=4	" Default: only tabs
 set noexpandtab		" Never uses spaces to indent
 set autoindent		" Copy indent at <BR>
+set smartindent		" Indent when needed
+set ignorecase		" Ignore case at searches
+set smartcase		" Ignore case at searches, when needed
+set gdefault		" g flag default at substitute
 set scrolloff=10	" Number of lines to keep above and below the cursor
 set incsearch		" Jump to search while writing
 set laststatus=2	" Always show the status line
 set shortmess=atI	" Shorter info tokens
 set cpoptions+=$	" Change like vi
 set wildmenu		" Better command-line completion
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+" }}}
+
+" Window {{{
+set winwidth=80
+set winheight=10
+set winminheight=10
+set winheight=999
 " }}}
 
 " Status line {{{
@@ -114,11 +129,6 @@ set statusline+=\ \ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}
 set statusline+=\ \ %{&fenc}
 set statusline+=\ %{GitHead()}
 set statusline+=\ %{GitHunks()}
-" }}}
-
-" Encoding {{{
-set encoding=utf-8	" Charset utf-8
-scriptencoding utf-8
 " }}}
 
 " Chars {{{
