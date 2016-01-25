@@ -1,7 +1,5 @@
 article-sort-order date-asc
 auto-reload yes
-browser "qutebrowser %u"
-html-renderer "w3m -dump -T text/html"
 keep-articles-days 60
 reload-threads 10
 
