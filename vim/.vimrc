@@ -19,13 +19,15 @@ Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 	map <C-z> :UndotreeToggle<cr>
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	let g:NERDTreeIgnore=['\.pyc$', '\.orig$']
-	map <C-q> :NERDTreeToggle<cr>
+Plug 'tpope/vim-eunuch'
 " }}}
 
 " Edit {{{
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'vimoutliner/vimoutliner', {'for': 'votl'}
 " }}}
 
 " Syntax {{{
@@ -36,6 +38,7 @@ Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
+Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'PotatoesMaster/i3-vim-syntax', { 'for': 'i3' }
 Plug 'elentok/todo.vim', { 'for': 'todo' }
 Plug 'lotheac/pf.vim', { 'for': 'pf' }
