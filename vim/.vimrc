@@ -127,6 +127,7 @@ set statusline+=%0*\ %f%m\ %w
 set statusline+=\ \ %=
 set statusline+=\ \ %{&ff=='unix'?'\\n':(&ff=='mac'?'\\r':'\\r\\n')}
 set statusline+=\ \ %{&fenc}
+set statusline+=\ \ %{&ft}
 set statusline+=\ %{GitHead()}
 set statusline+=\ %{GitHunks()}
 " }}}
