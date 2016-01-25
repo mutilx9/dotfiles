@@ -48,6 +48,7 @@ Plug 'lotheac/pf.vim', { 'for': 'pf' }
 Plug 'scrooloose/syntastic'
 	let g:syntastic_check_on_wq = 0
 	let g:syntastic_php_checkers = ['php', 'phpmd']
+	let g:syntastic_python_checkers = ['python', 'flake8', 'pylint']
 Plug 'SirVer/ultisnips'
 	let g:UltiSnipsJumpForwardTrigger="<c-f>"
 	let g:UltiSnipsJumpBackwardTrigger="<c-b>"
@@ -58,10 +59,11 @@ Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
 Plug 'klen/python-mode', { 'for': 'python' }
 	let g:pymode = 1
 	let g:pymode_rope = 0
-	let g:pymode_lint_checkers = ['pyflakes', 'pep8', 'mccabe']
+	let g:pymode_lint = 0
 Plug 'davidhalter/jedi-vim', { 'for': 'python' }
+	let g:jedi#popup_on_dot = 0
 	let g:jedi#use_splits_not_buffers = "left"
-	let g:jedi#show_call_signatures = "2"
+	let g:jedi#show_call_signatures = "0"
 Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
 Plug 'vim-scripts/SQLComplete.vim', { 'for': 'sql' }
 " }}}
