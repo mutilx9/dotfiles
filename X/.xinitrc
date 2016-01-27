@@ -24,7 +24,7 @@ setxkbmap -model pc104 -layout us,es -variant altgr-intl, -option grp:alt_shift_
 urxvtd -q -f &
 
 # Wallpaper
-feh --bg-scale ~/wallpaper.png ~/white.png --no-fehbg &
+feh --bg-scale ~/wallpaper.png --no-fehbg &
 
 # Set qt5 style
 export QT_STYLE_OVERRIDE="gtk"
