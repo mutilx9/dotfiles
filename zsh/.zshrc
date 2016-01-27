@@ -19,12 +19,7 @@ zstyle ':completion:*' rehash true
 bindkey OA history-beginning-search-backward
 bindkey OB history-beginning-search-forward
 
-# User env
-export EDITOR=vim
-export BROWSER=qutebrowser
-export RANGER_LOAD_DEFAULT_RC=FALSE
-export GPG_TTY=$(tty)
-alias git='TZ=UTC git'
 
-# Manually setting the language environment
-export LANG=en_US.UTF-8
+# alias
+alias git='TZ=UTC git'
+alias exit='if [[ $? == 0 ]]; then; exit; fi'
