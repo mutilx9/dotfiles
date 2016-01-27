@@ -1,0 +1,4 @@
+OPTIONS=showexp,showscore,time,color,autoquiver
+OPTIONS=number_pad=0
+OPTIONS=pickup_types:$?/=+)
+OPTIONS=disclose:yi +a +v -g +c +o
