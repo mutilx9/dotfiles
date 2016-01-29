@@ -2,6 +2,7 @@ article-sort-order date-asc
 auto-reload yes
 keep-articles-days 60
 reload-threads 10
+browser "$BROWSER %u"
 
 bind-key h quit
 bind-key k up
