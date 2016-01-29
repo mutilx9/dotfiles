@@ -47,6 +47,7 @@ Plug 'lotheac/pf.vim', { 'for': 'pf' }
 " Programming {{{
 Plug 'scrooloose/syntastic'
 	let g:syntastic_check_on_wq = 0
+	let g:syntastic_aggregate_errors = 1
 	let g:syntastic_php_checkers = ['php', 'phpmd']
 	let g:syntastic_python_checkers = ['python', 'flake8', 'pylint']
 Plug 'SirVer/ultisnips'
