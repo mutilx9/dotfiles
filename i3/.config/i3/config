@@ -59,10 +59,10 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+a focus parent
 
 # switch to workspace
-bindsym $ctrl+1 workspace "1: main"
-bindsym $ctrl+2 workspace "2: video"
-bindsym $ctrl+3 workspace "3: files"
-bindsym $ctrl+4 workspace "4: browser"
+bindsym $ctrl+1 workspace 1
+bindsym $ctrl+2 workspace 2
+bindsym $ctrl+3 workspace 3
+bindsym $ctrl+4 workspace 4
 bindsym $ctrl+5 workspace 5
 bindsym $ctrl+6 workspace 6
 bindsym $ctrl+7 workspace 7
@@ -71,10 +71,10 @@ bindsym $ctrl+9 workspace 9
 bindsym $ctrl+0 workspace 10
 
 # move focused container to workspace
-bindsym $ctrl+Shift+1 move container to workspace "1: main"
-bindsym $ctrl+Shift+2 move container to workspace "2: video"
-bindsym $ctrl+Shift+3 move container to workspace "3: files"
-bindsym $ctrl+Shift+4 move container to workspace "4: browser"
+bindsym $ctrl+Shift+1 move container to workspace 1
+bindsym $ctrl+Shift+2 move container to workspace 2
+bindsym $ctrl+Shift+3 move container to workspace 3
+bindsym $ctrl+Shift+4 move container to workspace 4
 bindsym $ctrl+Shift+5 move container to workspace 5
 bindsym $ctrl+Shift+6 move container to workspace 6
 bindsym $ctrl+Shift+7 move container to workspace 7
@@ -87,16 +87,16 @@ bindsym $ctrl+Shift+h move workspace to output HDMI-0
 bindsym $ctrl+Shift+d move workspace to output DVI-0
 
 # Workspaces
-workspace "1: main" output HDMI-0
-workspace "2: video" output HDMI-0
-workspace "3: files" output DVI-0
-workspace "4: browser" output DVI-0
+workspace 1 output HDMI-0
+workspace 2 output HDMI-0
+workspace 3 output DVI-0
+workspace 4 output DVI-0
 workspace 5 output HDMI-0
 workspace 6 output DVI-0
 
 # Clients on specific workspaces
-assign [class="^mpv$"] →  "2: video"
-assign [class="^qutebrowser$"] →  "4: browser"
+assign [class="^mpv$"] →  2
+assign [class="^qutebrowser$"] →  4
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
