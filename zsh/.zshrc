@@ -28,6 +28,7 @@ bindkey -M vicmd 'j' history-substring-search-down
 # Shell env
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
+export SAVEHIST=$HISTSIZE
 export KEYTIMEOUT=1
 export ZSH_THEME_GIT_PROMPT_CACHE=1
 export ZSH_THEME_GIT_PROMPT_PREFIX="on "
