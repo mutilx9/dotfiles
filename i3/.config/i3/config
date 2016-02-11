@@ -82,21 +82,9 @@ bindsym $ctrl+Shift+8 move container to workspace 8
 bindsym $ctrl+Shift+9 move container to workspace 9
 bindsym $ctrl+Shift+0 move container to workspace 10
 
-# move focused workspace to output
-bindsym $ctrl+Shift+h move workspace to output HDMI-0
-bindsym $ctrl+Shift+d move workspace to output DVI-0
-
-# Workspaces
-workspace 1 output HDMI-0
-workspace 2 output HDMI-0
-workspace 3 output DVI-0
-workspace 4 output DVI-0
-workspace 5 output HDMI-0
-workspace 6 output DVI-0
-
 # Clients on specific workspaces
 assign [class="^mpv$"] →  2
-assign [class="^qutebrowser$"] →  4
+assign [class="^qutebrowser$"] →  3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -119,18 +107,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Main monitor
 bar {
-	output HDMI-0
 	status_command i3status --config ~/.config/i3/i3status.conf
-	position top
-	font pango:Droid Sans Mono 11
-}
-
-# Second monitor
-bar {
-	output DVI-0
-	status_command i3status --config ~/.config/i3/i3status2.conf
 	position top
 	font pango:Droid Sans Mono 11
 }
