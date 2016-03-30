@@ -17,8 +17,8 @@ xset s off &
 # Disable bell
 xset b off &
 
-# Set layout to us,es, alt-shift to swap between and caps lock to ctrl
-setxkbmap -model pc104 -layout us,es -variant altgr-intl, -option grp:alt_shift_toggle -option ctrl:nocaps
+# Set layout to us and caps lock to ctrl
+setxkbmap -model pc104 -layout us -variant altgr-intl -option ctrl:nocaps
 
 # Wallpaper
 feh --bg-scale ~/wallpaper.png --no-fehbg &
