@@ -83,8 +83,8 @@ bindsym $ctrl+Shift+9 move container to workspace 9
 bindsym $ctrl+Shift+0 move container to workspace 10
 
 # Clients on specific workspaces
-assign [class="^mpv$"] →  2
-assign [class="^qutebrowser$"] →  3
+assign [class="^qutebrowser$"] →  2
+assign [class="^mpv$"] →  3
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
