@@ -111,6 +111,9 @@ bar {
 	status_command i3status --config ~/.config/i3/i3status.conf
 	position top
 	font pango:Droid Sans Mono 11
+	colors {
+		background #101010
+	}
 }
 
 # Screeshots
