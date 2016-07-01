@@ -17,6 +17,7 @@ PROMPT='%{$fg_bold[cyan]%}%n%{$reset_color%}@%{$fg_bold[green]%}%m%{$reset_color
 # Options
 setopt HIST_IGNORE_SPACE
 setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_SAVE_NO_DUPS
 setopt SHARE_HISTORY EXTENDED_HISTORY
 zstyle ':completion:*' rehash true
 
