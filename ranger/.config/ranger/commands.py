@@ -639,7 +639,7 @@ class mkdir(Command):
         if not lexists(dirname):
             makedirs(dirname)
         else:
-            self.fm.notify("file/directory exists!", bad=True)
+            self.fm.execute_console('scout -rs ' + self.rest(1))
 
     def tab(self):
         return self._tab_directory_content()
