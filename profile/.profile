@@ -12,6 +12,7 @@ export LC_CTYPE=en_US.UTF-8
 export LESSCHARSET=utf-8
 
 # User env
+export PATH=~/bin:$PATH
 export EDITOR=vim
 export MAILREADER=mutt
 export BROWSER=qutebrowser
