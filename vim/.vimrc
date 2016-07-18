@@ -1,5 +1,7 @@
 " vim: set foldmethod=marker foldlevel=0:
 
+let g:mapleader = "\<Space>"
+
 " Plug {{{
 call plug#begin('~/.vim/plugged')
 
@@ -151,9 +153,8 @@ set undoreload=10000
 
 " Mappings {{{
 
-let g:mapleader = "\<Space>"
 " Movement {{{
-nmap <Tab> ''
+nnoremap <Tab> ''
 " }}}
 " Saving {{{
 " Fast saving
