@@ -7,6 +7,7 @@ set header_cache = ~/.cache/mutt
 set edit_headers
 set hidden_host = yes
 set config_charset = utf-8
+set send_charset = utf-8
 auto_view text/html
 alternative_order text/plain text/html
 source ~/.mutt/mailboxes
