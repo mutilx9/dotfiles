@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 " Interface {{{
 Plug 'tomasr/molokai'
 	let g:molokai_original = 0
+Plug 'timakro/vim-searchant'
 " }}}
 
 " Browsing {{{
@@ -108,6 +109,7 @@ set ignorecase		" Ignore case at searches
 set smartcase		" Ignore case at searches, when needed
 set gdefault		" g flag default at substitute
 set scrolloff=10	" Number of lines to keep above and below the cursor
+set hlsearch		" Highlight searches
 set incsearch		" Jump to search while writing
 set laststatus=2	" Always show the status line
 set shortmess=atI	" Shorter info tokens
