@@ -241,7 +241,7 @@ function! GitHunks()
 	let hunk_symbols = ['+', '~', '-']
 	let string = ''
 	if exists(":GitGutter")
-		let hunks = gitgutter#hunk#summary()
+		let hunks = GitGutterGetHunkSummary()
 	else
 		return string
 	endif
