@@ -29,6 +29,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
+Plug 'wellle/targets.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vimoutliner/vimoutliner', {'for': 'votl'}
 " }}}
@@ -39,6 +40,7 @@ if &t_Co == '256'
 endif
 Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
+Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
