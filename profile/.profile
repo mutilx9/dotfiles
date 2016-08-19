@@ -3,7 +3,7 @@ if [[ $TERM == 'vt220' ]]; then
 fi
 
 if [[ -z $SSH_AGENT_PID ]]; then
-	eval `ssh-agent`
+	eval `ssh-agent -s -t 3600`
 fi
 
 # Locale
