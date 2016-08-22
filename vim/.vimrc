@@ -118,6 +118,7 @@ set shortmess=atI	" Shorter info tokens
 set cpoptions+=$	" Change like vi
 set wildmenu		" Better command-line completion
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+set lazyredraw		" Don't redraw when executing macros
 " }}}
 
 " Window {{{
@@ -188,6 +189,8 @@ nmap <leader>en :setlocal spell spelllang=en<CR>
 nmap <leader>es :setlocal spell spelllang=es<CR>
 " Escaping
 inoremap jk <Esc>
+" Change cmd history to quit
+map q: :q
 " STOP USING THE ARROW KEYS, HOME AND END {{{
 noremap <Up>	<nop>
 imap <Up>	<nop>
