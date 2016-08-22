@@ -8,6 +8,7 @@ set edit_headers
 set hidden_host = yes
 set config_charset = utf-8
 set send_charset = utf-8
+set mail_check_stats = yes
 auto_view text/html
 alternative_order text/plain text/html
 source ~/.mutt/mailboxes
@@ -20,8 +21,10 @@ color index yellow default ~O
 # Sidebar
 set sidebar_width = 20
 set sidebar_visible = yes
-set sidebar_delim = '|'
-set sidebar_sort = yes
+set sidebar_divider_char = '|'
+set sidebar_short_path = yes
+set sidebar_sort_method = new
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
 color sidebar_new yellow default
 
 macro index,pager S ':toggle sidebar_visible<enter>^L'
