@@ -35,7 +35,3 @@ export ZSH_THEME_GIT_PROMPT_CACHE=1
 export ZSH_THEME_GIT_PROMPT_PREFIX="on "
 export ZSH_THEME_GIT_PROMPT_SEPARATOR="("
 export ZSH_THEME_GIT_PROMPT_SUFFIX=")"
-
-# alias
-alias git='TZ=UTC git'
-alias exit='if [[ $? == 0 ]]; then; exit; fi'

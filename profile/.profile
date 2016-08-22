@@ -21,3 +21,7 @@ export MAILREADER=mutt
 export BROWSER=qutebrowser
 export RANGER_LOAD_DEFAULT_RC=FALSE
 export GPG_TTY=`tty`
+
+# Alias
+alias exit='if [[ $? == 0 ]]; then exit; fi'
+alias git='TZ=UTC git'
