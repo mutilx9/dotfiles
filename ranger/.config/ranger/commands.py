@@ -638,8 +638,7 @@ class mkdir(Command):
         dirname = join(self.fm.thisdir.path, expanduser(self.rest(1)))
         if not lexists(dirname):
             makedirs(dirname)
-        else:
-            self.fm.execute_console('scout -rs ' + self.rest(1))
+        self.fm.cd(dirname, remember=False)
 
     def tab(self):
         return self._tab_directory_content()
