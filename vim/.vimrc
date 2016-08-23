@@ -38,7 +38,8 @@ Plug 'vimoutliner/vimoutliner', {'for': 'votl'}
 if &t_Co == '256'
 	Plug 'aserebryakov/filestyle'
 endif
-Plug 'tpope/vim-markdown', { 'for': ['markdown', 'mdown', 'md'] }
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+	let g:markdown_fenced_languages = ['css', 'javascript', 'js=javascript', 'json=javascript', 'python', 'sass', 'xml', 'html']
 Plug 'jtratner/vim-flavored-markdown', { 'for': ['markdown', 'mdown', 'md'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'othree/html5.vim', { 'for': 'html' }
@@ -70,6 +71,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 	let g:jedi#popup_on_dot = 0
 	let g:jedi#use_splits_not_buffers = "left"
 	let g:jedi#show_call_signatures = "0"
+Plug 'phpvim/phpcd.vim', { 'for': 'php' }
 Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
 Plug 'vim-scripts/SQLComplete.vim', { 'for': 'sql' }
 " }}}
