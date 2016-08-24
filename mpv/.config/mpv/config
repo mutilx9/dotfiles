@@ -13,6 +13,7 @@ demuxer-mkv-subtitle-preroll
 
 # Audio
 
+ao=sndio,pulse,alsa
 af=scaletempo
 
 # Subtitles
