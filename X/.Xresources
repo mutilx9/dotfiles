@@ -1,38 +1,38 @@
-XTerm*faceName: DejaVu Sans Mono
-XTerm*faceSize: 12
-XTerm*Background: black
-XTerm*Foreground: green
+XTerm.faceName: DejaVu Sans Mono
+XTerm.faceSize: 12
+XTerm.Background: black
+XTerm.Foreground: green
 
-URxvt*depth: 16
-URxvt*cursorColor: #d0d0d0
-URxvt*font: xft:Liberation Mono:size=12
+URxvt.depth: 16
+URxvt.cursorColor: #d0d0d0
+URxvt.font: xft:Liberation Mono:size=12
 URxvt.scrollBar: false
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.visualBell: false
 URxvt.urgentOnBell: true
-URxvt*loginShell: true
-URxvt*termName: rxvt-256color
+URxvt.loginShell: true
+URxvt.termName: rxvt-256color
 /* xterm-like color */
 /*URxvt*color12: rgb:5c/5c/ff*/
 /* molokai */
-URxvt*background: #101010
-URxvt*foreground: #d0d0d0
-URxvt*color0: #101010
-URxvt*color1: #960050
-URxvt*color2: #66aa11
-URxvt*color3: #c47f2c
-URxvt*color4: #30309b
-URxvt*color5: #7e40a5
-URxvt*color6: #3579a8
-URxvt*color7: #9999aa
-URxvt*color8: #303030
-URxvt*color9: #ff0090
-URxvt*color10: #80ff00
-URxvt*color11: #ffba68
-URxvt*color12: #5f5fee
-URxvt*color13: #bb88dd
-URxvt*color14: #4eb4fa
-URxvt*color15: #d0d0d0
+URxvt.background: #101010
+URxvt.foreground: #d0d0d0
+URxvt.color0: #101010
+URxvt.color1: #960050
+URxvt.color2: #66aa11
+URxvt.color3: #c47f2c
+URxvt.color4: #30309b
+URxvt.color5: #7e40a5
+URxvt.color6: #3579a8
+URxvt.color7: #9999aa
+URxvt.color8: #303030
+URxvt.color9: #ff0090
+URxvt.color10: #80ff00
+URxvt.color11: #ffba68
+URxvt.color12: #5f5fee
+URxvt.color13: #bb88dd
+URxvt.color14: #4eb4fa
+URxvt.color15: #d0d0d0
 
 URxvt.perl-ext-common: selection-to-clipboard
