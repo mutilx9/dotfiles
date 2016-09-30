@@ -15,7 +15,12 @@ Plug 'timakro/vim-searchant'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
 	let g:ctrlp_show_hidden = 0
 	nmap <C-p> :CtrlP<cr>
-Plug 'rking/ag.vim', { 'on': 'Ag' }
+Plug 'mhinz/vim-grepper', { 'on': 'Grepper' }
+	let g:grepper = {
+		\ 'tools': ['ag', 'grep', 'git'],
+		\ 'ag': {
+		\   'grepprg':    'ag --vimgrep --hidden',
+		\ }}
 Plug 'mbbill/undotree', { 'on': 'UndotreeToggle' }
 	let g:undotree_WindowLayout = 2
 	let g:undotree_SetFocusWhenToggle = 1
@@ -72,6 +77,7 @@ Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 	let g:jedi#use_splits_not_buffers = "left"
 	let g:jedi#show_call_signatures = "0"
 Plug 'phpvim/phpcd.vim', { 'for': 'php' }
+Plug 'metakirby5/codi.vim', { 'on': 'Codi' }
 Plug 'vim-scripts/dbext.vim', { 'for': 'sql' }
 Plug 'vim-scripts/SQLComplete.vim', { 'for': 'sql' }
 " }}}
