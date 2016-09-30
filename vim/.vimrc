@@ -56,11 +56,17 @@ Plug 'lotheac/pf.vim', { 'for': 'pf' }
 " }}}
 
 " Programming {{{
+Plug 'w0rp/ale'
 Plug 'scrooloose/syntastic'
+	let g:syntastic_mode_map = {
+		\ "mode": "passive",
+		\ "active_filetypes": [],
+		\ "passive_filetypes": [] }
 	let g:syntastic_check_on_wq = 0
 	let g:syntastic_aggregate_errors = 1
 	let g:syntastic_php_checkers = ['php', 'phpmd']
 	let g:syntastic_python_checkers = ['python', 'flake8', 'pylint']
+Plug 'Shougo/neocomplete.vim'
 Plug 'SirVer/ultisnips'
 	let g:UltiSnipsJumpForwardTrigger="<c-f>"
 	let g:UltiSnipsJumpBackwardTrigger="<c-b>"
