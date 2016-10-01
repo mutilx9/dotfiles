@@ -1,4 +1,4 @@
-set spoolfile = "/var/spool/mail/$LOGNAME"
+set spoolfile = "~/Mail/inbox"
 set mbox_type = Maildir
 set sort = threads
 set sort_aux = date
